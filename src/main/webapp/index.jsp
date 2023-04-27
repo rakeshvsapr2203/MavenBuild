@@ -36,6 +36,7 @@
             <a class="w3-bar-item w3-button" href="#">Link 18-Test 18</a>
             <a class="w3-bar-item w3-button" href="#">Link 19-Test 19</a>
             <a class="w3-bar-item w3-button" href="#">Link 20-Test 20</a>
+            <a class="w3-bar-item w3-button" href="#">Link 21-Test 21</a>
             <div>
                 <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
                 <div id="demo" class="w3-hide">
