@@ -18,7 +18,7 @@ node(){
 	}
 
 	stage('email notification'){
-		mail bcc: '', body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>""", cc: 'himarshi.m@gmail.com', from: '', replyTo: '', 
+		mail bcc: '', body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>""", cc: 'bargav414@gmail.com', from: '', replyTo: '', 
 		subject: 'Test Application Notification', to: 'bharathaws87@gmail.com'
 		
 }
