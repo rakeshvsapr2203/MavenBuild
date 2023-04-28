@@ -22,5 +22,11 @@ node(){
 		subject: 'Test Application Notification', to: 'bharathaws87@gmail.com'
 		
 }
+	
+		stage('email notification test'){
+		mail bcc: '', body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>""", cc: 'rakesh.challuri@gmail.com', from: '', replyTo: '', 
+		subject: 'Test Application Notification', to: 'bharathaws87@gmail.com'
+		
+}
 }
 
