@@ -14,18 +14,18 @@ node(){
 	
 
 	stage('Code Deployment'){
-		deploy adapters: [tomcat9(credentialsId: 'TomcatCreds', path: '', url: 'http://34.245.133.106:8080/')], contextPath: 'finalpipelinetest', onFailure: false, war: 'target/*.war'
+		deploy adapters: [tomcat9(credentialsId: 'TomcatCreds', path: '', url: 'http://34.207.216.113:8080/')], contextPath: 'testjenkinstomcat', onFailure: false, war: 'target/*.war'
 	}
 
 	stage('email notification'){
-		mail bcc: '', body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>""", cc: 'vinaykumar7a@gmail.com', from: '', replyTo: '', 
-		subject: 'Test Application Notification', to: 'bharathaws87@gmail.com'
+		mail bcc: '', body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>""", cc: 'rakesh.challuri@gmail.com', from: '', replyTo: '', 
+		subject: 'Test Application Notification', to: 'mahaboobjani9@gmail.com'
 		
 }
 	
 		stage('email notification test'){
 		mail bcc: '', body: """<p>SUCCESSFUL: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>""", cc: 'rakesh.challuri@gmail.com', from: '', replyTo: '', 
-		subject: 'Test Application Notification', to: 'bharathaws87@gmail.com'
+		subject: 'Test Application Notification', to: 'mahaboobjani9@gmail.com'
 		
 }
 }
